@@ -1,4 +1,4 @@
-# RailsAdminMaterial theme
+# RailsAdminMaterial theme [![Gem Version](https://badge.fury.io/rb/rails_admin_material.svg)](https://badge.fury.io/rb/rails_admin_material)
 
 A Material Design theme for rails_admin
 
@@ -19,6 +19,10 @@ A Material Design theme for rails_admin
 ## Preview
 
 ![preview](preview.jpg)
+
+## Notes
+
+Tested on rails 5.0.1 with rails_admin 1.1.1
 
 ## Contributors
 
