@@ -1,0 +1,5 @@
+@mixin gray-input-border() {
+  border-top: 1px solid $gray-light2;
+  border-left: 1px solid $gray-light2;
+  border-right: 1px solid $gray-light2;
+}

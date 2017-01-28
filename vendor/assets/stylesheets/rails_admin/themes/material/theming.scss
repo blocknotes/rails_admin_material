@@ -1,0 +1,124 @@
+// --- Generic settings ---------------------------------------------------- //
+// All buttons raised
+.btn, .btn.disabled {
+  @extend .btn-raised;
+}
+body {
+  font-family: $admin-font;
+}
+
+// --- Header settings ----------------------------------------------------- //
+.navbar-header > .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: $fg-navbar-brand;
+  &:hover, &:focus {
+    color: $fg-navbar-brand;
+    opacity: 0.8;
+  }
+}
+
+// --- Sidebar settings ---------------------------------------------------- //
+.sidebar-nav {
+  margin-top: $generic-space * 2;
+  .dropdown-header {
+    border-bottom: 1px solid $gray-light2;
+  }
+  .nav-pills li {
+    margin-top: 0;
+  }
+}
+
+// --- Content settings ---------------------------------------------------- //
+.content {
+  margin-top: $generic-space * 6;
+}
+
+// --- List settings ------------------------------------------------------- //
+// Dashboard progress bars
+.content table .progress {
+  height: $line-height-computed;
+}
+
+// --- Form settings ------------------------------------------------------- //
+// Inline filter / search forms
+.pjax-form.form-inline .well {
+  padding-top: $generic-space * 2.5;
+  padding-bottom: $generic-space;
+  span a.btn {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .input-group .form-group {
+    margin: 0;
+  }
+}
+// compact forms
+.form-horizontal .form-group {
+  margin-top: $generic-space * 2;
+  // nested tabs
+  .tab-content {
+    background-color: $well-bg;
+    border-top: 1px dashed $gray-light2;
+    border-bottom: 1px dashed $gray-light2;
+  }
+  .btn-group {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .checkbox label {
+    text-align: left;
+  }
+  .control-label {
+    margin-top: $generic-space;
+  }
+  .controls .btn {
+    margin-top: $generic-space;
+  }
+  .form-control.ra-filtering-select-input {
+    margin-top: $generic-space;
+  }
+  .form-control.ra-multiselect-collection, .form-control.ra-multiselect-selection {
+    @include gray-input-border();
+  }
+  .input-group.filtering-select ~ .help-block {
+    top: -$generic-space * 2;
+  }
+  &.belongs_to_association_type > .control-label {
+    margin-top: $generic-space * 2;
+  }
+  &.boolean_type .checkbox > label {
+    padding-left: $generic-space * 2;
+  }
+  input[type="file"] {
+    height: $generic-space * 6;
+    opacity: 1.0;
+    position: initial;
+  }
+  label.dropdown-toggle {
+    padding-top: $generic-space * 1.5;
+    padding-bottom: $generic-space * 1.5;
+  }
+  textarea.form-control {
+    @include gray-input-border();
+  }
+}
+// modals
+.modal {
+  .modal-body {
+    padding-bottom: 0;
+    > form.form-horizontal {
+      margin-top: 0;
+    }
+  }
+  .modal-header {
+    a.close {
+      @extend .btn;
+    }
+  }
+  .modal-footer {
+    margin-bottom: $generic-space * 2;
+    margin-right: $generic-space * 2;
+    > .btn {
+      margin-bottom: 0;
+    }
+  }
+}
