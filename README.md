@@ -34,6 +34,8 @@ $btn-info-border: #da0;
 
 ![preview](preview.jpg)
 
+![preview2](preview2.jpg)
+
 ## Notes
 
 Tested on rails 5.0.1 with rails_admin 1.1.1

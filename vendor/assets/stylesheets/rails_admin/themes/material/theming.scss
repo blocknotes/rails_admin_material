@@ -6,6 +6,9 @@
 body {
   font-family: $admin-font;
 }
+.bootstrap-datetimepicker-widget {
+  z-index: 999;
+}
 
 // --- Header settings ----------------------------------------------------- //
 .navbar-header > .navbar-brand, .navbar-default .navbar-nav > li > a {
@@ -65,6 +68,7 @@ body {
     margin-bottom: 0;
   }
   .checkbox label {
+    padding-left: 10px;
     text-align: left;
   }
   .control-label {
@@ -81,6 +85,9 @@ body {
   }
   .input-group.filtering-select ~ .help-block {
     top: -$generic-space * 2;
+  }
+  .well ~ .controls {
+    margin-top: $generic-space * 2;
   }
   &.belongs_to_association_type > .control-label {
     margin-top: $generic-space * 2;
