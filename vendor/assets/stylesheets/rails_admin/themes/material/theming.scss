@@ -21,13 +21,16 @@ body {
 
 // --- Sidebar settings ---------------------------------------------------- //
 .sidebar-nav {
-  margin-top: $generic-space * 2;
   .dropdown-header {
     border-bottom: 1px solid $gray-light2;
   }
   .nav-pills li {
     margin-top: 0;
   }
+}
+body.rails_admin .sidebar-nav {
+  background-color: $bg-sidebar-nav;
+  margin-top: $generic-space * 2;
 }
 
 // --- Content settings ---------------------------------------------------- //
@@ -44,6 +47,7 @@ body {
 // --- Form settings ------------------------------------------------------- //
 // Inline filter / search forms
 .pjax-form.form-inline .well {
+  box-shadow: 0 1px 4px $gray-light;
   padding-top: $generic-space * 2.5;
   padding-bottom: $generic-space;
   span a.btn {
@@ -55,11 +59,11 @@ body {
   }
 }
 // compact forms
-.form-horizontal .form-group {
+.form-group {
   margin-top: $generic-space * 2;
   // nested tabs
   .tab-content {
-    background-color: $well-bg;
+    background-color: $bg-nested-tab;
     border-top: 1px dashed $gray-light2;
     border-bottom: 1px dashed $gray-light2;
   }
@@ -71,8 +75,13 @@ body {
     padding-left: 10px;
     text-align: left;
   }
-  .control-label {
-    margin-top: $generic-space;
+  .checkbox label, .radio label, label {
+    color: $gray-light;
+  }
+  label.control-label {
+    line-height: 2;
+    margin-top: 0;
+    // margin-top: $generic-space;
   }
   .controls .btn {
     margin-top: $generic-space;
@@ -83,13 +92,20 @@ body {
   .form-control.ra-multiselect-collection, .form-control.ra-multiselect-selection {
     @include gray-input-border();
   }
+  .form-control-static {
+    margin-left: $generic-space * 2.5;
+  }
+  .help-block {
+    margin-left: $generic-space * 2.5;
+    font-style: italic;
+  }
+  .input-group.filtering-select > .input-group-btn {
+    padding: 0 4px;
+  }
   .input-group.filtering-select ~ .help-block {
     top: -$generic-space * 2;
   }
   .well ~ .controls {
-    margin-top: $generic-space * 2;
-  }
-  &.belongs_to_association_type > .control-label {
     margin-top: $generic-space * 2;
   }
   &.boolean_type .checkbox > label {
@@ -128,4 +144,19 @@ body {
       margin-bottom: 0;
     }
   }
+}
+// fix missing font characters for true / false
+.boolean_type > .label {
+  font-family: sans-serif;
+}
+.form-inline .form-control {
+  vertical-align: initial;
+}
+
+// --- Misc settings ------------------------------------------------------- //
+.has_many_association_type .help-block {
+  top: -$generic-space * 3;
+}
+#filters_box a {
+  color: #fff;
 }

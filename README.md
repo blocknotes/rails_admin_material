@@ -36,11 +36,20 @@ $btn-info-border: #da0;
 
 ![preview2](preview2.jpg)
 
+## Troubleshooting
+
+- If the styles are not applied try to clean the Rails pipeline cache:
+
+```sh
+rake tmp:clear
+rake assets:precompile
+```
+
 ## Notes
 
-Tested on rails 5.0.1 with rails_admin 1.1.1
+- Tested on rails 5.0.1 with rails_admin 1.1.1
 
-Based on [Material Design for Bootstrap](http://fezvrasta.github.io/bootstrap-material-design/)
+- Based on [Material Design for Bootstrap](http://fezvrasta.github.io/bootstrap-material-design/)
 
 ## Contributors
 
