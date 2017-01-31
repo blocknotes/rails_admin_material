@@ -30,7 +30,11 @@ body {
 }
 body.rails_admin .sidebar-nav {
   background-color: $bg-sidebar-nav;
-  margin-top: $generic-space * 2;
+}
+@media screen and (min-width: 1200px) {
+  body.rails_admin .sidebar-nav {
+    margin-top: $generic-space * 2;
+  }
 }
 
 // --- Content settings ---------------------------------------------------- //
@@ -154,9 +158,22 @@ body.rails_admin .sidebar-nav {
 }
 
 // --- Misc settings ------------------------------------------------------- //
-.has_many_association_type .help-block {
-  top: -$generic-space * 3;
+.has_many_association_type {
+  .help-block {
+    top: -$generic-space * 3;
+  }
+  .nav-tabs {
+    display: table;
+    li.active > a {
+      color: $nav-tabs-active-link-hover-color;
+    }
+  }
 }
 #filters_box a {
   color: #fff;
+}
+#list {
+  th.boolean_type, td.boolean_type {
+    text-align: center;
+  }
 }
