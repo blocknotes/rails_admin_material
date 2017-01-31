@@ -49,7 +49,7 @@ body.rails_admin .sidebar-nav {
 }
 
 // --- Form settings ------------------------------------------------------- //
-// Inline filter / search forms
+// inline search forms
 .pjax-form.form-inline .well {
   box-shadow: 0 1px 4px $gray-light;
   padding-top: $generic-space * 2.5;
@@ -61,15 +61,24 @@ body.rails_admin .sidebar-nav {
   .input-group .form-group {
     margin: 0;
   }
+  .input-group-btn {
+    padding: 0 4px;
+  }
+}
+// inline filter form
+#filters_box {
+  .label > a {
+    color: #fff;
+  }
+  select.form-control {
+    border: 1px solid $gray-light2;
+  }
 }
 // compact forms
 .form-group {
   margin-top: $generic-space * 2;
-  // nested tabs
-  .tab-content {
-    background-color: $bg-nested-tab;
-    border-top: 1px dashed $gray-light2;
-    border-bottom: 1px dashed $gray-light2;
+  .btn.disabled {
+    color: $gray-lighter;
   }
   .btn-group {
     margin-top: 0;
@@ -100,8 +109,16 @@ body.rails_admin .sidebar-nav {
     margin-left: $generic-space * 2.5;
   }
   .help-block {
-    margin-left: $generic-space * 2.5;
+    color: $fg-help-block;
+    display: block;
     font-style: italic;
+    position: initial;
+    margin-top: $generic-space;
+    margin-bottom: $generic-space * 2;
+    margin-left: $generic-space * 2.5;
+  }
+  .help-inline {
+    margin-left: $generic-space * 2.5;
   }
   .input-group.filtering-select > .input-group-btn {
     padding: 0 4px;
@@ -109,11 +126,26 @@ body.rails_admin .sidebar-nav {
   .input-group.filtering-select ~ .help-block {
     top: -$generic-space * 2;
   }
+  // nested tabs
+  .tab-content {
+    background-color: $bg-nested-tab;
+    border-top: 1px dashed $gray-light2;
+    border-bottom: 1px dashed $gray-light2;
+  }
   .well ~ .controls {
     margin-top: $generic-space * 2;
   }
   &.boolean_type .checkbox > label {
     padding-left: $generic-space * 2;
+  }
+  &.control-group {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    &.error .control-label {
+      color: $brand-danger;
+    }
   }
   input[type="file"] {
     height: $generic-space * 6;
@@ -158,7 +190,7 @@ body.rails_admin .sidebar-nav {
 }
 
 // --- Misc settings ------------------------------------------------------- //
-.has_many_association_type {
+.has_many_association_type, .has_and_belongs_to_many_association_type {
   .help-block {
     top: -$generic-space * 3;
   }
@@ -168,9 +200,6 @@ body.rails_admin .sidebar-nav {
       color: $nav-tabs-active-link-hover-color;
     }
   }
-}
-#filters_box a {
-  color: #fff;
 }
 #list {
   th.boolean_type, td.boolean_type {
