@@ -41,7 +41,7 @@ $btn-info-border: #da0;
 - If the styles are not applied try to clean the Rails pipeline cache:
 
 ```sh
-rake tmp:clear
+rake assets:clean
 rake assets:precompile
 ```
 
