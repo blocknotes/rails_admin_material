@@ -1,10 +1,10 @@
 // --- Generic settings ---------------------------------------------------- //
+body {
+  font-family: $admin-font;
+}
 // All buttons raised
 .btn, .btn.disabled {
   @extend .btn-raised;
-}
-body {
-  font-family: $admin-font;
 }
 .bootstrap-datetimepicker-widget {
   z-index: 999;
@@ -127,10 +127,13 @@ body.rails_admin .sidebar-nav {
     top: -$generic-space * 2;
   }
   // nested tabs
-  .tab-content {
+  .tab-content > .tab-pane {
     background-color: $bg-nested-tab;
-    border-top: 1px dashed $gray-light2;
-    border-bottom: 1px dashed $gray-light2;
+    border-left: 5px solid $brand-primary !important;
+    border-top: 1px dotted $gray-light;
+    border-bottom: 1px dotted $gray-light;
+    margin-bottom: $generic-space;
+    margin-top: $generic-space;
   }
   .well ~ .controls {
     margin-top: $generic-space * 2;
@@ -143,6 +146,11 @@ body.rails_admin .sidebar-nav {
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
+    .well {
+      box-shadow: 0 1px 4px $gray-light;
+      padding-top: $generic-space * 2.5;
+      padding-bottom: $generic-space;
+    }
     &.error .control-label {
       color: $brand-danger;
     }
@@ -196,10 +204,13 @@ body.rails_admin .sidebar-nav {
   }
   .nav-tabs {
     display: table;
-    li.active > a {
-      color: $nav-tabs-active-link-hover-color;
-    }
   }
+}
+.nav-tabs li.active i, .nav-tabs li.active span {
+  color: $fg-nav-tabs-active;
+}
+#fields_to_export > .form-group.control-group {
+  margin-bottom: $generic-space * 5;
 }
 #list {
   th.boolean_type, td.boolean_type {

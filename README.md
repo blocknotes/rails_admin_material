@@ -19,7 +19,7 @@ A Material Design theme for rails_admin
 To change theme colors edit *app/assets/stylesheets/rails_admin/custom/variables.scss*:
 
 ```sass
-/// orange theme sample
+// orange theme sample
 $brand-primary: #d51;
 $brand-info: #ea2;
 $link-color: #800;
@@ -28,6 +28,7 @@ $btn-primary-bg: #d51;
 $btn-primary-border: #da0;
 $btn-info-bg: #fa4;
 $btn-info-border: #da0;
+$fg-nav-tabs-active: #fb1;
 ```
 
 ## Preview
@@ -46,8 +47,6 @@ rake assets:precompile
 ```
 
 ## Notes
-
-- Tested on rails 5.0.1 with rails_admin 1.1.1
 
 - Based on [Material Design for Bootstrap](http://fezvrasta.github.io/bootstrap-material-design/)
 
