@@ -217,3 +217,21 @@ body.rails_admin .sidebar-nav {
     text-align: center;
   }
 }
+
+#btn-menu-wrapper {
+  padding: 0 3px 10px 3px;
+  position: relative;
+  z-index: 999;
+  > a {
+    padding-left: 10px;
+    padding-right: 10px;
+    &.opened {
+      position: absolute;
+      right: 5px;
+    }
+  }
+}
+.content-expanded {
+  padding-left: 60px;
+  padding-right: 15px;
+}
