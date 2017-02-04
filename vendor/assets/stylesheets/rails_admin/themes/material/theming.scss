@@ -9,6 +9,12 @@ body {
 .bootstrap-datetimepicker-widget {
   z-index: 999;
 }
+.panel {
+  border: 1px solid #ccc;
+  .panel-title {
+    color: #fff;
+  }
+}
 
 // --- Header settings ----------------------------------------------------- //
 .navbar-header > .navbar-brand, .navbar-default .navbar-nav > li > a {
@@ -206,8 +212,9 @@ body.rails_admin .sidebar-nav {
     display: table;
   }
 }
-.nav-tabs li.active i, .nav-tabs li.active span {
-  color: $fg-nav-tabs-active;
+// .nav-tabs li.active i, .nav-tabs li.active span {
+.nav-tabs li.active {
+  background-color: $bg-nav-tabs-active;
 }
 #fields_to_export > .form-group.control-group {
   margin-bottom: $generic-space * 5;
@@ -217,7 +224,6 @@ body.rails_admin .sidebar-nav {
     text-align: center;
   }
 }
-
 #btn-menu-wrapper {
   padding: 0 3px 10px 3px;
   position: relative;

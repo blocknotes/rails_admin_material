@@ -16,8 +16,8 @@ $gray-light2: lighten($gray-base, 80%) !default;
 // $gray-lighter2: lighten($gray-base, 96%) !default;
 $bg-nested-tab: transparent;  // #f8f8f8;
 $bg-sidebar-nav: #f0f0f0;
+$bg-nav-tabs-active: lighten($brand-primary, 10%) !default;
 $fg-navbar-brand: #fff;
-$fg-nav-tabs-active: #fb1 !default;
 $fg-help-block: #999;
 
 // spacing
