@@ -10,7 +10,7 @@ body {
   z-index: 999;
 }
 .panel {
-  border: 1px solid #ccc;
+  border: 1px solid $fg-shadow;
   .panel-title {
     color: #fff;
   }
@@ -26,12 +26,12 @@ body {
 }
 
 // --- Sidebar settings ---------------------------------------------------- //
-.sidebar-nav {
-  .dropdown-header {
+.sidebar-nav .nav-pills li {
+  margin-top: 0;
+  &.dropdown-header {
     border-bottom: 1px solid $gray-light2;
-  }
-  .nav-pills li {
-    margin-top: 0;
+    font-size: 100%;
+    margin-bottom: $generic-space * 1.5;
   }
 }
 body.rails_admin .sidebar-nav {
@@ -73,11 +73,25 @@ body.rails_admin .sidebar-nav {
 }
 // inline filter form
 #filters_box {
+  > .form-search:first-child {
+    margin-top: $generic-space;;
+  }
+  > .form-search {
+    margin-bottom: $generic-space;;
+  }
   .label > a {
     color: #fff;
   }
+  .label {
+    vertical-align: baseline;
+  }
   select.form-control {
     border: 1px solid $gray-light2;
+  }
+  input, select {
+    vertical-align: baseline;
+    vertical-align: -moz-middle-with-baseline;
+    vertical-align: -webkit-baseline-middle;
   }
 }
 // compact forms
@@ -212,9 +226,9 @@ body.rails_admin .sidebar-nav {
     display: table;
   }
 }
-// .nav-tabs li.active i, .nav-tabs li.active span {
 .nav-tabs li.active {
   background-color: $bg-nav-tabs-active;
+  border-bottom: 1px solid $fg-shadow;
 }
 #fields_to_export > .form-group.control-group {
   margin-bottom: $generic-space * 5;
