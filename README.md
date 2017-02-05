@@ -1,10 +1,14 @@
 # RailsAdminMaterial theme [![Gem Version](https://badge.fury.io/rb/rails_admin_material.svg)](https://badge.fury.io/rb/rails_admin_material)
 
-A Material Design theme for rails_admin
+A Material Design theme for [rails_admin](https://github.com/sferik/rails_admin).
 
-## Requirements
+Features:
 
-- rails_admin
+- better UI
+
+- improved nested forms styles
+
+- hide/show sidebar button
 
 ## Installation
 
@@ -16,7 +20,7 @@ A Material Design theme for rails_admin
 
 ## Customization
 
-To change theme colors edit *app/assets/stylesheets/rails_admin/custom/variables.scss*:
+To change theme colors add / edit *app/assets/stylesheets/rails_admin/custom/variables.scss*:
 
 ```sass
 // orange theme sample
