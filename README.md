@@ -2,6 +2,8 @@
 
 A Material Design theme for [rails_admin](https://github.com/sferik/rails_admin).
 
+Demo: [heroku app](http://rails-admin-material.herokuapp.com/admin/)
+
 Features:
 
 - better UI
