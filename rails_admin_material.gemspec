@@ -13,6 +13,6 @@ Gem::Specification.new do |s|
   s.summary     = "RailsAdminMaterial theme"
   s.description = "A Material Design theme for rails_admin"
   s.files = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
-  # s.add_dependency "rails_admin", "> 1.0.0"
+  s.add_dependency "rails_admin", ">= 0.8.1"
   s.license     = 'MIT'
 end

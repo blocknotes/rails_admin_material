@@ -52,6 +52,8 @@ rake assets:clean
 rake assets:precompile
 ```
 
+- Sass errors? Try updating sass-rails (or sassc-rails): `bundle update sass-rails`
+
 ## Notes
 
 - Based on [Material Design for Bootstrap](http://fezvrasta.github.io/bootstrap-material-design/)
