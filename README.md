@@ -62,7 +62,7 @@ rake assets:precompile
 
 - [Mattia Roccoberton](http://blocknot.es) - creator, maintainer
 
-## LICENSE
+## ISC LICENSE
 
 Copyright (c) 2017, Mattia Roccoberton <mat@blocknot.es>
 
