@@ -4,11 +4,11 @@ A Material Design theme for [rails_admin](https://github.com/sferik/rails_admin)
 
 Features:
 
-- nice user interface
+- Material user interface
 
 - improve nested forms styles
 
-- hide/show sidebar function
+- hide/show sidebar
 
 Demo: [heroku app](http://rails-admin-material.herokuapp.com/admin/)
 
@@ -43,20 +43,22 @@ $fg-nav-tabs-active: #fb1;
 
 ![preview2](preview2.jpg)
 
-## Troubleshooting
+## Notes
 
-- If the styles are not applied try to clean the Rails pipeline cache:
+Based on [Material Design for Bootstrap](http://fezvrasta.github.io/bootstrap-material-design/)
+
+If the styles are not applied try to clean the Rails pipeline cache:
 
 ```sh
 rake assets:clean
 rake assets:precompile
 ```
 
-- Sass errors? Try updating sass-rails (or sassc-rails): `bundle update sass-rails`
+Sass errors? Try updating sass-rails (or sassc-rails): `bundle update sass-rails`
 
-## Notes
+## Do you like it? Star it!
 
-- Based on [Material Design for Bootstrap](http://fezvrasta.github.io/bootstrap-material-design/)
+If you use this component just star it. A developer is more motivated to improve a project when there is some interest.
 
 ## Contributors
 

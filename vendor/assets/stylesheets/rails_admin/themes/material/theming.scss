@@ -180,7 +180,7 @@ body.rails_admin .form-horizontal .controls {
     color: $fg-help-block;
     display: block;
     font-style: italic;
-    position: initial;
+    position: static;
     margin-top: $generic-space;
     margin-bottom: $generic-space * 2;
     margin-left: $generic-space * 2.5;

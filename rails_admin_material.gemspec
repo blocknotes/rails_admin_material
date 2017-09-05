@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/blocknotes/rails_admin_material"
   s.summary     = "RailsAdminMaterial theme"
   s.description = "A Material Design theme for rails_admin"
-  s.files = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{lib,vendor}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
+  s.license     = 'ISC'
   s.add_dependency "rails_admin", ">= 0.8.1"
-  s.license     = 'MIT'
 end
