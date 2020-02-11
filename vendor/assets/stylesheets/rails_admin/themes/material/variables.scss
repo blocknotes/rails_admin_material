@@ -6,7 +6,12 @@
 @import 'bootstrap-material-design/_mixins';
 @import 'bootstrap-material-design/_shadows';
 @import 'bootstrap-material-design/_form';
-@import 'bootstrap-material-design/**/*';
+// @import 'bootstrap-material-design/**/*'; // not working with Rails6 + RailsAdmin2
+@import 'bootstrap-material-design/_core'; // this updates most of the other partials
+@import 'bootstrap-material-design/_colors';
+@import 'bootstrap-material-design/_colors-map';
+@import 'bootstrap-material-design/_labels';
+@import 'bootstrap-material-design/_shadows';
 
 // fonts
 $admin-font: 'Roboto', sans-serif;
