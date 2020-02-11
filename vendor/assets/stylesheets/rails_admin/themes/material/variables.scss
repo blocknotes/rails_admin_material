@@ -6,7 +6,31 @@
 @import 'bootstrap-material-design/_mixins';
 @import 'bootstrap-material-design/_shadows';
 @import 'bootstrap-material-design/_form';
-@import 'bootstrap-material-design/**/*';
+// @import 'bootstrap-material-design/**/*'; // not working with Rails6 + RailsAdmin2
+
+@import 'bootstrap-material-design/_core';
+@import 'bootstrap-material-design/_alerts';
+@import 'bootstrap-material-design/_buttons';
+@import 'bootstrap-material-design/_cards';
+@import 'bootstrap-material-design/_checkboxes';
+@import 'bootstrap-material-design/_colors';
+@import 'bootstrap-material-design/_colors-map';
+@import 'bootstrap-material-design/_dialogs';
+@import 'bootstrap-material-design/_dividers';
+@import 'bootstrap-material-design/_inputs';
+@import 'bootstrap-material-design/_inputs-size';
+@import 'bootstrap-material-design/_labels';
+@import 'bootstrap-material-design/_lists';
+@import 'bootstrap-material-design/_navbar';
+@import 'bootstrap-material-design/_panels';
+@import 'bootstrap-material-design/_popups';
+@import 'bootstrap-material-design/_progress';
+@import 'bootstrap-material-design/_radios';
+@import 'bootstrap-material-design/_shadows';
+@import 'bootstrap-material-design/_tabs';
+@import 'bootstrap-material-design/_togglebutton';
+@import 'bootstrap-material-design/_typography';
+@import 'bootstrap-material-design/_welljumbo';
 
 // fonts
 $admin-font: 'Roboto', sans-serif;
